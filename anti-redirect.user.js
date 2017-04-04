@@ -4,7 +4,7 @@
 // @collaborator      Axetroy
 // @description       GM脚本, 去除各搜索引擎/常用网站的重定向
 // @version           1.2.1
-// @update            2017-03-27 10:33:51
+// @update            2017-04-04 18:21:32
 // @grant             GM_xmlhttpRequest
 // @include           *www.baidu.com*
 // @include           *tieba.baidu.com*
@@ -3927,7 +3927,7 @@ var BaiduTiebaRedirect = (function (_super) {
     };
     return BaiduTiebaRedirect;
 }(redirect_on_url_1.RedirectOnUrl));
-exports.default = new BaiduTiebaRedirect(/tieba\.baidu\.com/, /jump\.bdimg\.com/, null);
+exports.default = new BaiduTiebaRedirect(/tieba\.baidu\.com/, /jump\d*\.bdimg\.com/, null);
 
 
 /***/ }),
